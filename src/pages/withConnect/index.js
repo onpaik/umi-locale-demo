@@ -14,6 +14,7 @@ import style from './index.less';
     handleClick,
   },
 )
+@withIntl('WithConnect')
 class List extends React.PureComponent {
   render() {
     const { list, intl } = this.props;
@@ -45,4 +46,4 @@ class List extends React.PureComponent {
   }
 }
 
-export default withIntl('WithConnect')(List);
+export default List;
