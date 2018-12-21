@@ -7,6 +7,8 @@ import { handleClick } from './actions';
 import ChangeLocale from '../changeLocale';
 import style from './index.less';
 
+const useCompose = true;
+
 class List extends React.PureComponent {
   render() {
     const { list, intl } = this.props;
@@ -37,15 +39,30 @@ class List extends React.PureComponent {
     );
   }
 }
+const component = do {
+  if (useCompose)
+    compose(
+      connect(
+        ({ listCompose }) => ({
+          list: listCompose,
+        }),
+        {
+          handleClick,
+        },
+      ),
+      withIntl('WithConnect'),
+    )(List);
+  else
+    withIntl('WithConnect')(
+      connect(
+        ({ listCompose }) => ({
+          list: listCompose,
+        }),
+        {
+          handleClick,
+        },
+      )(List),
+    );
+};
 
-export default compose(
-  connect(
-    ({ listCompose }) => ({
-      list: listCompose,
-    }),
-    {
-      handleClick,
-    },
-  ),
-  withIntl('WithConnect'),
-)(List);
+export default component;
