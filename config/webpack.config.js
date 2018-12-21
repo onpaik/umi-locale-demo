@@ -1,16 +1,13 @@
-import { writeFileSync } from 'fs';
+// import { writeFileSync } from 'fs';
 
-export default (config, { webpack }) => {
+export default config => {
   config.resolve.modules.add('src');
-  // 动态国际化需要
-  config.resolve.modules.add('public');
   // 排除 ejs svg
   config.module.rules
     .get('exclude')
     .exclude.add(/\.ejs$/)
     .add(/.svg$/)
     .end();
-
   config.module
     .rule('svg')
     .test(/\.svg$/i)
@@ -21,10 +18,6 @@ export default (config, { webpack }) => {
     .set('@compose', 'shared/utils/compose')
     .set('@utils', 'shared/utils')
     .set('@components', 'shared/components');
-  if (process.env.NODE_ENV === 'production') {
-    config
-      .plugin('language')
-      .use(webpack.IgnorePlugin, [/^\.\/js|json/, /public\/lang$/]);
-  }
-  writeFileSync(`${__dirname.replace(/config/, 'temp.js')}`, config);
+
+  // writeFileSync(`${__dirname.replace(/config/, 'temp.js')}`, config);
 };
