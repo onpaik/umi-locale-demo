@@ -1,5 +1,5 @@
 import React from 'react';
-import Fork from 'shared/components/Fork/';
+import Fork from '@components/Fork/';
 import style from './index.less';
 
 const Layout = props => (

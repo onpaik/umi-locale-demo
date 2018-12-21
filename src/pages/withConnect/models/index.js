@@ -1,4 +1,4 @@
-import { info } from 'shared/utils/messages';
+import { info } from '@utils/messages';
 
 export default {
   namespace: 'listConnect',

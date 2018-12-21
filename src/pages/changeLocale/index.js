@@ -3,7 +3,7 @@
  */
 
 import { FormattedMessage, setLocale, getLocale } from 'umi/locale';
-import withIntl from 'shared/utils/withIntl';
+import withIntl from '@utils/withIntl';
 import { Button } from 'antd';
 import Msg from './messages/index.js';
 

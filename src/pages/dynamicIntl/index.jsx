@@ -3,7 +3,7 @@
  */
 
 import { FormattedMessage, getLocale } from 'umi/locale';
-import withIntl from 'shared/utils/withIntl';
+import withIntl from '@utils/withIntl';
 import ChangeLocale from '../changeLocale';
 
 const demo = props => {

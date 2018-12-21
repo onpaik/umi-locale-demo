@@ -20,7 +20,7 @@ export default [
       title: 'umi-locale-demo',
       fastClick: true,
       routes: {
-        exclude: [/(consts|models|messages|locales)/, /model\.js/],
+        exclude: [/(consts|models|messages|locales|actions)/, /model\.js/],
       },
       // pwa: {
       //   workboxOptions: {

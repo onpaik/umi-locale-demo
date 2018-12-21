@@ -1,4 +1,4 @@
 {
-  "list1":"list one",
-  "list2":"list two"
+  "list1":"list one {type}",
+  "list2":"list two {type}"
 }

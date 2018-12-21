@@ -1,7 +1,6 @@
 import { withIntl } from 'umi/withIntl';
-import { getLocale } from 'umi/locale';
+import locale from './getLocale';
 
-const locale = getLocale();
 const getFloder = () => {
   if (locale.match(/^zh$/g)) return 'zh-CN';
   if (locale.match(/^en$/g)) return 'en-US';
