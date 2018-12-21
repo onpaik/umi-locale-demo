@@ -5,7 +5,6 @@
 import { FormattedMessage, setLocale, getLocale } from 'umi/locale';
 import withIntl from '@utils/withIntl';
 import { Button } from 'antd';
-import Msg from './messages/index.js';
 
 const demo = () => {
   const locale = getLocale();
@@ -18,7 +17,10 @@ const demo = () => {
       <div>
         语言切换测试
         <br />
-        <FormattedMessage {...Msg.localeChange} values={{ type: locale }} />
+        <FormattedMessage
+          {...{ id: 'locale-change' }}
+          values={{ type: locale }}
+        />
       </div>
       {support.map(lang => (
         <Button key={lang} onClick={() => click(lang)} type={getType(lang)}>

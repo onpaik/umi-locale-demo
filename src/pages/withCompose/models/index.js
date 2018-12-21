@@ -1,4 +1,4 @@
-import { info } from 'shared/utils/messages';
+import { info } from 'shared/utils/message';
 
 export default {
   namespace: 'listCompose',
