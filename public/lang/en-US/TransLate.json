@@ -1,4 +1,4 @@
 {
-  "translate-demo":"dynamicIntl test {type}",
-  "translate-demo-1":"dynamicIntl test 1"
+	"translate-demo": "动态国际化测试 {type}",
+	"translate-demo-1": "动态国际化测试 1"
 }

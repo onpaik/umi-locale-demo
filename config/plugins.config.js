@@ -32,13 +32,21 @@ export default [
   [
     'umi-plugin-locale-paik',
     {
-      enable: true,
-      baseNavigator: true,
-      momentLocaleMap: { en: 'en-nz', zh: 'zh-cn' },
-      antLocaleMap: { en: 'en_US', zh: 'zh_CN' },
-      localeMap: { zh: 'zh-CN', en: 'en-US' },
-      default: 'en',
-      translate: true,
+      locale: {
+        baseNavigator: true,
+        momentMap: { en: 'en-nz', zh: 'zh-cn' },
+        antdMap: { en: 'en_US', zh: 'zh_CN' },
+        fileMap: { zh: 'zh-CN', en: 'en-US' },
+        default: 'zh',
+      },
+      translate: {
+        support: {
+          enUS: 'en-US',
+          zhCN: 'zh-CN',
+          zhTW: 'zh-TW',
+          zhHK: 'zh-HK',
+        },
+      },
       dynamicIntl: true,
     },
   ],
