@@ -12940,16 +12940,17 @@ umi-plugin-hd@1.3.0:
     postcss-plugin-px2rem "0.8.1"
     umi-hd "5.0.1"
 
-umi-plugin-locale-paik@3.0.5:
-  version "3.0.5"
-  resolved "http://registry.npm.taobao.org/umi-plugin-locale-paik/download/umi-plugin-locale-paik-3.0.5.tgz#d8e926d06e98f5535f00d10af8184c7a8eef0264"
-  integrity sha1-2Okm0G6Y9VNfANEK+BhMeo7vAmQ=
+umi-plugin-locale-paik@^3.0.6:
+  version "3.0.6"
+  resolved "http://registry.npm.taobao.org/umi-plugin-locale-paik/download/umi-plugin-locale-paik-3.0.6.tgz#7f01b574171e89d2697039bd5e99154686038cae"
+  integrity sha1-fwG1dBceidJpcDm9XpkVRoYDjK4=
   dependencies:
     "@babel/core" "^7.2.2"
     "@babel/polyfill" "^7.2.5"
     "@babel/preset-env" "^7.2.3"
     antd "3.x"
     deepmerge "^3.0.0"
+    execa "^1.0.0"
     globby "^9.0.0"
     hoist-non-react-statics "^3.2.1"
     intl "^1.2.5"
