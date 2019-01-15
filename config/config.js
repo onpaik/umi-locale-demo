@@ -12,4 +12,8 @@ export default {
   chainWebpack: webpackConfig,
   theme: './theme-config.js',
   urlLoaderExcludes: [/.svg$/, /.ejs$/],
+  // '../node_modules/af-webpack/lib/getConfig/css.js#opts.cssModulesWithAffix'
+  cssModulesWithAffix: false,
+  // https://github.com/umijs/umi/tree/master/docs/config#treeshaking-
+  treeShaking: true,
 };

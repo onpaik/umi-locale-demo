@@ -1,4 +1,5 @@
 // import { writeFileSync } from 'fs';
+import CompressionPlugin from 'compression-webpack-plugin';
 
 export default config => {
   config.resolve.modules.add('src');
@@ -10,6 +11,7 @@ export default config => {
     .loader(require.resolve('svg-sprite-loader'));
   // lint build模式lint代码
   if (process.env.NODE_ENV === 'production') {
+    // lint build模式lint代码
     config.module
       .rule('lint-rule')
       .test(/\.js$/)
@@ -18,6 +20,14 @@ export default config => {
         formatter: require('eslint-friendly-formatter'),
         emitWarning: false,
       });
+    // gzip
+    config.plugin('compression').use(
+      new CompressionPlugin({
+        test: /\.(js|css)(\?.*)?$/i,
+        filename: '[path].gz[query]',
+        algorithm: 'gzip',
+      }),
+    );
   }
   // 增加alias
   config.resolve.alias

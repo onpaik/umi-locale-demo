@@ -1445,10 +1445,10 @@ antd@3.x:
     shallowequal "^1.1.0"
     warning "~4.0.2"
 
-antd@^3.12.1:
-  version "3.12.1"
-  resolved "http://registry.npm.taobao.org/antd/download/antd-3.12.1.tgz#d1b3138ee907f7884f9eae2bfdee0b1b714bfe62"
-  integrity sha1-0bMTjukH94hPnq4r/e4LG3FL/mI=
+antd@^3.12.3:
+  version "3.12.3"
+  resolved "http://registry.npm.taobao.org/antd/download/antd-3.12.3.tgz#ffb409c5317e17583bf8493a4726d77ac839c7d2"
+  integrity sha1-/7QJxTF+F1g7+Ek6RybXesg5x9I=
   dependencies:
     "@ant-design/icons" "~1.1.16"
     "@ant-design/icons-react" "~1.1.2"
@@ -1469,7 +1469,7 @@ antd@^3.12.1:
     rc-calendar "~9.10.3"
     rc-cascader "~0.17.0"
     rc-checkbox "~2.1.5"
-    rc-collapse "~1.10.0"
+    rc-collapse "~1.10.2"
     rc-dialog "~7.3.0"
     rc-drawer "~1.7.6"
     rc-dropdown "~2.4.1"
@@ -2420,7 +2420,7 @@ cacache@^10.0.4:
     unique-filename "^1.1.0"
     y18n "^4.0.0"
 
-cacache@^11.0.2:
+cacache@^11.0.2, cacache@^11.2.0:
   version "11.3.2"
   resolved "http://registry.npm.taobao.org/cacache/download/cacache-11.3.2.tgz#2d81e308e3d258ca38125b676b98b2ac9ce69bfa"
   integrity sha1-LYHjCOPSWMo4Eltna5iyrJzmm/o=
@@ -2934,6 +2934,18 @@ compressible@~2.0.14:
   integrity sha1-hXqasKfloH2Ng37UP+Le//ZP4hI=
   dependencies:
     mime-db ">= 1.36.0 < 2"
+
+compression-webpack-plugin@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/compression-webpack-plugin/download/compression-webpack-plugin-2.0.0.tgz#46476350c1eb27f783dccc79ac2f709baa2cffbc"
+  integrity sha1-RkdjUMHrJ/eD3Mx5rC9wm6os/7w=
+  dependencies:
+    cacache "^11.2.0"
+    find-cache-dir "^2.0.0"
+    neo-async "^2.5.0"
+    schema-utils "^1.0.0"
+    serialize-javascript "^1.4.0"
+    webpack-sources "^1.0.1"
 
 compression@^1.5.2:
   version "1.7.3"
@@ -10150,7 +10162,7 @@ rc-checkbox@~2.1.5:
     prop-types "15.x"
     rc-util "^4.0.4"
 
-rc-collapse@~1.10.0:
+rc-collapse@~1.10.0, rc-collapse@~1.10.2:
   version "1.10.2"
   resolved "http://registry.npm.taobao.org/rc-collapse/download/rc-collapse-1.10.2.tgz#2136c9aca8f5f8e2af66d6454adde56693fa0f00"
   integrity sha1-ITbJrKj1+OKvZtZFSt3lZpP6DwA=
@@ -10629,7 +10641,7 @@ react-dom@16.6.3:
     prop-types "^15.6.2"
     scheduler "^0.11.2"
 
-react-dom@16.8.0-alpha.0:
+"react-dom@16.8.0-alpha.0 -next":
   version "16.8.0-alpha.0"
   resolved "http://registry.npm.taobao.org/react-dom/download/react-dom-16.8.0-alpha.0.tgz#47bbcf42593eab5468b577d3c3f3c27f251a65ef"
   integrity sha1-R7vPQlk+q1RotXfTw/PCfyUaZe8=
@@ -10788,7 +10800,7 @@ react@16.6.3:
     prop-types "^15.6.2"
     scheduler "^0.11.2"
 
-react@16.8.0-alpha.0:
+"react@16.8.0-alpha.0 -next":
   version "16.8.0-alpha.0"
   resolved "http://registry.npm.taobao.org/react/download/react-16.8.0-alpha.0.tgz#8545eb79534cce5ba99ed40085f7f955e8857a19"
   integrity sha1-hUXreVNMzlupntQAhff5VeiFehk=
