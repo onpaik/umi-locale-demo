@@ -1,4 +1,4 @@
-import { withIntl } from 'umi/withIntl';
+import withIntl, { parseArguments } from 'umi/withIntl';
 import locale from './getLocale';
 
 const getFloder = () => {
@@ -7,4 +7,17 @@ const getFloder = () => {
   return locale;
 };
 
-export default component => withIntl(getFloder(), component);
+export default (...arg) => {
+  const { component, options } = parseArguments(arg);
+  return withIntl(getFloder(), component, {
+    host: `http://localhost:${PORT}`,
+    resHandler: res => {
+      const ret = {
+        ...res,
+        sssssssss: 'jahahjhahaha',
+      };
+      return ret;
+    },
+    ...options,
+  });
+};

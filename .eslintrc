@@ -29,6 +29,7 @@
     "react/destructuring-assignment":"off"
   },
   "globals": {
+    "PORT": true
   },
   "settings": {
     "import/resolver": {

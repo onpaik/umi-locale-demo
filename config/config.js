@@ -1,6 +1,7 @@
 import webpackConfig from './webpack.config';
-// import routes from './router.config';
 import plugins from './plugins.config';
+
+const envConfig = require('dotenv').config();
 
 export default {
   plugins,
@@ -16,4 +17,7 @@ export default {
   cssModulesWithAffix: false,
   // https://github.com/umijs/umi/tree/master/docs/config#treeshaking-
   treeShaking: true,
+  define: {
+    PORT: envConfig.parsed.PORT,
+  },
 };
