@@ -1,10 +1,15 @@
 import React from 'react';
 import withIntl from '@utils/withIntl';
+import Child from './child';
 
 @withIntl({
   intlUrl: '/get/remote/lang',
 })
 class Demo extends React.Component {
+  getContext = () => {
+    return this.props.intl;
+  };
+
   render() {
     const { formatMessage } = this.props.intl;
     return (
@@ -21,6 +26,8 @@ class Demo extends React.Component {
             id: 'sssssssss',
           })}
         </span>
+        <br />
+        <Child />
       </>
     );
   }

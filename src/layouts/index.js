@@ -1,5 +1,6 @@
 import React from 'react';
 import Fork from '@components/Fork/';
+import withIntl from '@utils/withIntl';
 import style from './index.less';
 
 const Layout = props => (
@@ -9,4 +10,6 @@ const Layout = props => (
   </>
 );
 
-export default Layout;
+export default withIntl({
+  intlUrl: '/get/remote/lang/1',
+})(Layout);

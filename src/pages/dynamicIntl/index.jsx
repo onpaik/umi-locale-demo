@@ -30,6 +30,7 @@ const demo = props => {
             id: 'translate-demo-1',
           })}
         </span>
+        <br />
       </div>
       <br />
       <ChangeLocale />
