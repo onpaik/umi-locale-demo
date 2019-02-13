@@ -1,3 +1,4 @@
 {
-	"locale-change": "语言切换测试 {type}"
+	"locale-change": "语言切换测试 {type}",
+	"global-tip":"错误"
 }
