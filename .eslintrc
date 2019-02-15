@@ -1,6 +1,5 @@
 {
   "extends": [
-    "prettier",
     "umi",
     "onpaik"
   ],
