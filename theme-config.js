@@ -1,3 +1,3 @@
 module.exports = {
-  '@font-size-base': '12px',
+  '@font-size-base': '16px',
 };
