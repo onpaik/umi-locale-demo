@@ -20,4 +20,5 @@ export default {
   define: {
     PORT: envConfig.parsed.PORT,
   },
+  extraBabelPlugins: [['import-paik']],
 };

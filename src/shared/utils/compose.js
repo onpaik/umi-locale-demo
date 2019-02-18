@@ -1,4 +1,4 @@
-import { compose } from 'umi/withIntl';
+import { compose } from 'paik-utils';
 
 export { compose };
 
