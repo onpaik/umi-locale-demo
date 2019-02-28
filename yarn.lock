@@ -1979,10 +1979,10 @@ babel-plugin-dynamic-import-node@2.2.0:
   dependencies:
     object.assign "^4.1.0"
 
-babel-plugin-import-paik@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/babel-plugin-import-paik/-/babel-plugin-import-paik-0.0.4.tgz#37b4698bb2a398ebb915309f5d4db83f298c0f6a"
-  integrity sha512-b2wvnFeTGUFiO6VmgKqd3cufUYlElEH+/45fRWJJzIuFmCGrkwG2hBUG1TRal8QuV/btbI3wkE/9nr8yMjRaRQ==
+babel-plugin-import-paik@^0.0.5:
+  version "0.0.5"
+  resolved "http://registry.npm.taobao.org/babel-plugin-import-paik/download/babel-plugin-import-paik-0.0.5.tgz#3d9d275dfa24a0b9167843c9e32bc81feaab0dbc"
+  integrity sha1-PZ0nXfokoLkWeEPJ4yvIH+qrDbw=
   dependencies:
     "@babel/cli" "^7.2.3"
     "@babel/core" "^7.3.3"
@@ -8912,10 +8912,10 @@ package-json@^4.0.0:
     registry-url "^3.0.3"
     semver "^5.1.0"
 
-paik-utils@^0.0.11:
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/paik-utils/-/paik-utils-0.0.11.tgz#d6f6c6ac66b93b1e5711177098df73eb9b78e413"
-  integrity sha512-Kfkrb3ZM1yHVXn5sFqOSfHzNerimu2arPxLF4SW7vUmpkQqmewzh+Wf7hYFSMph3qyViQvmcGtmDjRGoMSrlcg==
+paik-utils@^0.0.12:
+  version "0.0.12"
+  resolved "http://registry.npm.taobao.org/paik-utils/download/paik-utils-0.0.12.tgz#3c8bf23b6e6a511c989adc5870f4e10643eb0c09"
+  integrity sha1-PIvyO25qURyYmtxYcPThBkPrDAk=
 
 pako@~1.0.5:
   version "1.0.8"

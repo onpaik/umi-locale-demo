@@ -31,7 +31,7 @@
     "antd": "^3.13.6",
     "react": "16.8.3",
     "react-dom": "16.8.3",
-    "paik-utils": "^0.0.11"
+    "paik-utils": "^0.0.12"
   },
   "devDependencies": {
     "eslint-loader": "^2.1.2",
@@ -43,7 +43,7 @@
     "svg-sprite-loader":"^4.1.3",
     "eslint-friendly-formatter":"^4.0.1",
     "compression-webpack-plugin":"^2.0.0",
-    "babel-plugin-import-paik": "^0.0.4"
+    "babel-plugin-import-paik": "^0.0.5"
   },
   "publishConfig": {
     "access": "public",
